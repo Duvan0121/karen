@@ -379,8 +379,19 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .article-card strong { display: block; margin-top: 4px; line-height: 1.22; }
 .article-card p { margin: 7px 0 0; font-size: .78rem; }
 .recommendation-link { display: inline-flex; margin-top: 6px; font-weight: 900; text-decoration: underline; text-underline-offset: 4px; }
-.fact-box { display: flex; flex-direction: column; justify-content: space-between; background: var(--sapphire); color: var(--white); }
+
+.fact-box {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;              /* separación entre el texto y la línea "Método:" */
+  align-self: start;      /* evita que se estire a la altura de la tarjeta 05 */
+  height: fit-content;
+  background: var(--sapphire);
+  color: var(--white);
+}
+
 .fact-box p { color: var(--white); font-size: 1.16rem; line-height: 1.35; }
+
 .fact-icon { width: 50px; height: 50px; display:grid; place-items:center; border-radius: 16px; background: var(--mint); color: var(--sapphire); font-size: 1.5rem; }
 .refline { margin-top: 16px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,.16); font-size: .74rem; opacity: .86; }
 .loading { min-height: 100vh; display: grid; place-items: center; color: var(--slate); }

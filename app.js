@@ -773,8 +773,7 @@ function renderMethod(method) {
             </h2>
 
             <p>
-              Dos lecturas complementarias, una en español y otra en inglés,
-              enlazadas directamente.
+                Articulos que te pueden interesar.
             </p>
 
             <div class="article-list">
