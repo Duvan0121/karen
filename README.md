@@ -6,12 +6,31 @@ Sitio web académico estático en HTML/CSS/JS puro, preparado para publicarse di
 - `index.html`: página principal.
 - `method.html`: plantilla dinámica de las cinco fichas.
 - `styles.css`: paleta, layout, fondo, responsive y animaciones.
-- `app.js`: contenido de los cinco métodos e interacción.
+- `app.js`: contenido de los cinco métodos (`METHODS`), lista de referencias (`REFERENCES`) e interacción.
 - `fondo.png`: fondo botánico.
-- `thumb-es.svg` / `thumb-en.svg`: miniaturas de lecturas.
+- `media/`: imágenes oficiales por método y SVG de respaldo (ver «Imágenes por método»).
 - `media/video-cognicion-temprana.mp4`: video local que se reproducirá en todas las fichas.
 - `media/video-poster.svg`: portada del reproductor mientras carga el video.
 - `.nojekyll`: evita procesamiento innecesario del sitio estático por Jekyll.
+
+## Contenido
+Todo el texto de las cinco fichas (descripción, «Qué es», «Qué mide», lecturas en español e inglés, sitio recomendado y dato curioso) proviene del documento Word «Página Web (psicología del desarrollo)». La lista completa de referencias aparece al final de la página principal.
+
+- **Actividad interactiva (04):** en las cinco fichas es una imagen que abre otra página al hacer clic. La URL de cada método está en `activityUrl` dentro de `METHODS` (por ahora `https://www.reto01.com` … `https://www.reto05.com`).
+- **Video de referencia:** cada ficha muestra el video local y, debajo, el enlace al video de YouTube indicado en el Word.
+- **Dato curioso:** el Word no trae este apartado; cada dato se redactó con frases del propio Word.
+
+## Imágenes por método
+Todas viven en `media/` y se nombran `<número><TIPO>.<extensión>`, donde el número es el del método (01–05):
+
+| Archivo | Se usa en |
+|---|---|
+| `01ES` | 03 · Lectura en español |
+| `01EN` | 03 · Lectura en inglés |
+| `01WEB` | 05 · Miniatura de la página web recomendada |
+| `01RETO` | 04 · Imagen de la actividad interactiva |
+
+La extensión puede ser `jpg`, `png`, `jpeg` o `webp` (se prueban en ese orden), y las mayúsculas del nombre importan en GitHub Pages. Mientras una imagen no exista se muestra un SVG de respaldo (`media/thumb-es.svg`, `media/thumb-en.svg`, `media/thumb-web.svg`, `media/reto-placeholder.svg`).
 
 ## Video local
 El sitio ya no usa YouTube. Coloca tu video en `media/video-cognicion-temprana.mp4`. El reproductor usa HTML5 `<video>`, por lo que funciona en GitHub Pages como un recurso estático.
@@ -37,7 +56,7 @@ La información ya no depende de un scroll interno. Hay una única ventana diná
 No se requieren pasos de compilación porque es un sitio estático. GitHub Pages puede publicar directamente archivos HTML, CSS y JavaScript desde un repositorio.
 
 ## Personalización rápida
-- Textos y enlaces: editar `METHODS` en `app.js`.
+- Textos y enlaces: editar `METHODS` (fichas, incluido `activityUrl` de cada reto) y `REFERENCES` (referencias completas) en `app.js`.
 - Colores: editar las variables al inicio de `styles.css`.
 - Video: reemplazar `media/video-cognicion-temprana.mp4` por el video del proyecto, conservando el nombre.
 - Fondo: reemplazar `fondo.png` conservando ese nombre.
