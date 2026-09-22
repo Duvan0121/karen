@@ -89,7 +89,7 @@ const METHODS = {
       'Presenta al bebé dos estímulos visuales simultáneos, acompañados de un estímulo auditivo central, y registra hacia cuál dirige su mirada.',
 
     description:
-      'De acuerdo con Barón Birchenall et al. (2014), el paradigma intermodal de preferencia de mirada “consiste en presentar al infante dos estímulos visuales simultáneos, generalmente en dos pantallas o a izquierda y derecha de una pantalla única, acompañados de un estímulo auditivo central”, evaluando su capacidad de integración audiovisual al medir si su atención visual se dirige preferentemente hacia la opción congruente con el sonido reproducido.',
+      'Según Barón Birchenall et al. (2014, p. 83), este método consiste en "presentar al infante dos estímulos visuales simultáneos acompañados de un estímulo auditivo central", evaluando su integración audiovisual a través de su preferencia de mirada.',
 
     what:
       'Este paradigma experimental se centra en la presentación simultánea de estímulos visuales emparejados con una fuente sonora común. De acuerdo con Barón Birchenall et al. (2014, p. 83), el método “consiste en presentar al bebé dos estímulos visuales simultáneos, generalmente en dos pantallas o a izquierda y derecha de una pantalla única, acompañados de un estímulo auditivo central”, lo cual permite presentar una situación controlada donde se observa la reacción natural del bebé ante la sincronía o asincronía de los estímulos del entorno.',
@@ -773,7 +773,7 @@ function renderMethod(method) {
             </h2>
 
             <p>
-                Articulos que te pueden interesar.
+                Articulos que te pueden interesar .
             </p>
 
             <div class="article-list">
