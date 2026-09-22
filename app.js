@@ -25,7 +25,7 @@ const METHODS = {
   has: {
     number: '01',
     category: 'Percepción auditiva',
-    title: 'Procedimiento de Succión de Amplitud Elevada',
+    title: 'Procedimiento de Succión de Amplitud Elevada (High-Amplitude Sucking - HAS)',
     short: 'High-Amplitude Sucking (HAS)',
 
     summary:
@@ -139,7 +139,7 @@ const METHODS = {
   hab: {
     number: '03',
     category: 'Atención y aprendizaje',
-    title: 'Paradigma de Habituación y Deshabituación',
+    title: 'Paradigma de Habituación y Deshabituación (Habituation-Dishabituation)',
     short: 'Habituation–Dishabituation',
 
     summary:
@@ -196,7 +196,7 @@ const METHODS = {
   voe: {
     number: '04',
     category: 'Expectativas',
-    title: 'Paradigma de Expectativa Violada / Eventos Inesperados',
+    title: 'Paradigma de Expectativa Violada / Eventos Inesperados (Violation of Expectation)',
     short: 'Violation of Expectation (VoE)',
 
     summary:
@@ -253,7 +253,7 @@ const METHODS = {
   fn: {
     number: '05',
     category: 'Familiaridad y novedad',
-    title: 'Paradigma de Familiaridad vs. Novelty',
+    title: 'Paradigma de Familiaridad vs. Novelty (Novedad vs. Familiaridad)',
     short: 'Familiarity vs. Novelty',
 
     summary:
